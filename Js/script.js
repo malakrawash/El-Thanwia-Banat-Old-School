@@ -19,11 +19,17 @@ const leftImages = [
 ];
 
 const btmRImages = [
-    "Images/p-a.jpeg"
+    "Images/p-a.jpeg",
+    "Images/p-b.jpeg",
+    "Images/p-c.jpeg",
+    "Images/p-d.jpeg"
 ];
 
 const btmLImages = [
-    "Images/n-a.jpeg"
+    "Images/n-a.jpeg",
+    "Images/n-b.jpeg",
+    "Images/n-c.jpeg",
+    "Images/n-d.jpeg"
 ];
 
 
@@ -34,13 +40,19 @@ const picsTopLeftImages = [
 ];
 
 const picsBottomRightImages = [
-    "Images/g1.jpeg"
+    "Images/g1.jpeg",
+    "Images/g2.jpeg",
+    "Images/g3.jpeg",
+    "Images/g4.jpeg",
+    "Images/g5.jpeg"
+
 ];
 
 const picsBottomLeftImages = [
     "Images/li1.jpeg",
     "Images/li2.jpeg",
-    "Images/li3.jpeg"
+    "Images/li3.jpeg",
+    "Images/li4.jpeg"
 ];
 
 function createSlider(selector, images) {
@@ -100,3 +112,11 @@ createSlider(".btm-l", btmLImages);
 createSlider(".pics-topl", picsTopLeftImages);
 createSlider(".pics-bottomr", picsBottomRightImages);
 createSlider(".pics-bottoml", picsBottomLeftImages);
+
+const hamburger = document.getElementById("hamburger");
+const navLinks = document.getElementById("navLinks");
+
+hamburger.addEventListener("click", () => {
+    hamburger.classList.toggle("active");
+    navLinks.classList.toggle("active");
+});
