@@ -1505,7 +1505,8 @@ footer{
 
     .bac-row.scnd::after,
     .bac-row.third::after{
-        width: 250px;
+        width: 240px;
+        flex-wrap: nowrap;
     }
 
 
