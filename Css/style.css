@@ -1499,11 +1499,15 @@ footer{
 
 @media (max-width:600px){
 
-    .bac-row.frst::after,
-    .bac-row.scnd::after,
-    .bac-row.third::after{
+    .bac-row.frst::after{
         width: 200px;
     }
+
+    .bac-row.scnd::after,
+    .bac-row.third::after{
+        width: 250px;
+    }
+
 
     .pics{
         gap: 20px;
