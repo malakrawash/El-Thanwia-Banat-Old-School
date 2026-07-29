@@ -11,6 +11,8 @@ html{
     overflow-x:hidden;
 }
 
+@import url(https://fonts.googleapis.com/earlyaccess/amiri.css);
+
 body {
     direction: rtl;
     display: flex;
@@ -22,6 +24,8 @@ body {
     background-color: #fff;
     overflow-x: hidden;
     cursor: pointer;
+
+    font-family: 'Amiri', serif; 
 }
 
 nav{
@@ -185,8 +189,8 @@ nav{
     border-top: #001c37 solid 5px;
     border-radius: 35px;
     width: 350px;
-    height: 150px;
-    padding: 15px;
+    height: 190px;
+    padding: 10px;
     box-shadow: 0 15px 20px #c2c7d194;
     transition: all .5s ease;
 }
@@ -833,6 +837,7 @@ nav{
     justify-content: center;
     align-items: center;
     margin: auto;
+    flex-wrap: wrap;
     gap: 75px;
     margin-top: 30px;
 }
@@ -1553,7 +1558,12 @@ footer{
     .card-head h2{
         font-size:1.2rem;
     }
-
+    .caption {
+        padding:0 30px;
+    }
+    .card{
+        height: 130px;
+    }
     .about-r{
         height:300px;
     }
@@ -1643,6 +1653,11 @@ footer{
     }
 
     .row3{
+        margin-top: 0;
+        padding: 30px;
+    }
+
+    .row4{
         margin-top: 0;
         padding: 30px;
     }
