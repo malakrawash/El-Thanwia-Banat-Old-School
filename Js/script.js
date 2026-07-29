@@ -90,7 +90,7 @@ function createSlider(selector, images) {
 
             }, 400);
 
-        }, 2000);
+        }, 1000);
 
     });
 

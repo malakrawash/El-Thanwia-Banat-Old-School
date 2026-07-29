@@ -630,7 +630,7 @@ nav{
 
 .rule-card{
     width: 210px;
-    height: 250px;
+    height: 260px;
     background: #fff;
     border: 2px solid #dcdcdc;
     border-radius: 20px;
@@ -908,7 +908,7 @@ nav{
     left: 50%;
     transform: translateX(-50%);
 
-    width: 200px;
+    width: 300px;
     text-align: center;
     margin: auto;
     padding: 12px 35px;
@@ -927,7 +927,7 @@ nav{
     left: 50%;
     transform: translateX(-50%);
 
-    width: 200px;
+    width: 300px;
     text-align: center;
     margin: auto;
     padding: 12px 35px;
@@ -946,7 +946,7 @@ nav{
     left: 50%;
     transform: translateX(-50%);
 
-    width: 200px;
+    width: 300px;
     text-align: center;
     margin: auto;
     padding: 12px 35px;
@@ -1263,12 +1263,21 @@ footer{
     transition: .3s;
 }
 
+.ltr{
+    direction: ltr;
+}
+.footer-contact a:hover{
+    color: #ffe088;
+}
+
 .malak{
     direction: ltr;
 }
 
 .table{
     display: grid;
+    justify-content: center;
+    align-items: center;
     grid-template-columns: repeat(2, 1fr);
     gap: 22px;
     width: 100%;
@@ -1490,7 +1499,9 @@ footer{
 }
 
 @media (max-width:600px){
-
+    .row1{
+        margin: 40px;
+    }
     nav{
         padding:15px;
     }
