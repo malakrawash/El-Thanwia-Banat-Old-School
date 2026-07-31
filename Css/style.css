@@ -1300,8 +1300,19 @@ footer {
 
 .malak {
     direction: ltr;
+    text-align: center;
+}
+.malak a{
+    text-decoration: none;
+    color: #ffe088;
 }
 
+.mail{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
 .table {
     display: grid;
     justify-content: center;
