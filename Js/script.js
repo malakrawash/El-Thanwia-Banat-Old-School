@@ -55,6 +55,14 @@ const picsBottomLeftImages = [
     "Images/li4.jpeg"
 ];
 
+const hamburger = document.getElementById("hamburger");
+const navLinks = document.getElementById("navLinks");
+
+hamburger.addEventListener("click", () => {
+    hamburger.classList.toggle("active");
+    navLinks.classList.toggle("active");
+});
+
 function createSlider(selector, images) {
 
     const slide = document.querySelector(selector);
@@ -103,7 +111,6 @@ function createSlider(selector, images) {
 
 }
 
-
 createSlider(".slides-top", topImages);
 createSlider(".slides-left", leftImages);
 createSlider(".btm-r", btmRImages);
@@ -113,10 +120,3 @@ createSlider(".pics-topl", picsTopLeftImages);
 createSlider(".pics-bottomr", picsBottomRightImages);
 createSlider(".pics-bottoml", picsBottomLeftImages);
 
-const hamburger = document.getElementById("hamburger");
-const navLinks = document.getElementById("navLinks");
-
-hamburger.addEventListener("click", () => {
-    hamburger.classList.toggle("active");
-    navLinks.classList.toggle("active");
-});
